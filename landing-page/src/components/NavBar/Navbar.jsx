@@ -1,9 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import logo from '../../assets/logo.png';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
-export default function Navbar() {
+const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             {/* Logo */}
@@ -57,10 +58,12 @@ export default function Navbar() {
                     rel="noopener noreferrer"
                     className={styles.ctaButton}
                     >
-                    <faWhatsapp />
-                    CHAT
+                    <FontAwesomeIcon icon={faWhatsapp} className={styles.whatsappIcon} />
+                        <span>CHAT</span>
                     </a>
             </div>
         </nav>
     );
 }
+
+export default Navbar;

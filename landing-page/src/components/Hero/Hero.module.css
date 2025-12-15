@@ -1,0 +1,215 @@
+.hero {
+    position: relative;
+    height: calc(100vh - 145px); /* Resta altura del navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4rem 2rem;
+}
+
+    /* Degradé de fondo */
+.gradientBg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #e0f2f7 0%, #b3e5f5 50%, #81d4fa 100%);
+    z-index: 1;
+}
+
+    /* Grid de imágenes */
+.imageGrid {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    opacity: 0.25;
+    z-index: 2;
+}
+
+.imageBox {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.imageBox:hover {
+    transform: scale(1.05);
+    opacity: 0.4;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageBox:nth-child(2) {
+    transform: translateY(3rem);
+}
+
+/* Contenido central */
+.content {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Card glassmorphism */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+/* Título */
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #4BA9C8;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 1.2rem;
+    color: #546e7a;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btnPrimary {
+    background: #4BA9C8;
+    color: white;
+    box-shadow: 0 6px 20px rgba(75, 169, 200, 0.3);
+}
+
+.btnPrimary:hover {
+    background: #1E3A5F;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(75, 169, 200, 0.4);
+}
+
+.btnSecondary {
+    background: white;
+    color: #1E3A5F;
+    border: 2px solid #4BA9C8;
+}
+
+.btnSecondary:hover {
+    background: #4BA9C8;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(75, 169, 200, 0.08);
+    border-radius: 15px;
+    min-width: 150px;
+}
+
+.featureIcon {
+    font-size: 1.8rem;
+}
+
+.feature span:last-child {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+    @media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .imageGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .imageBox:nth-child(2) {
+        transform: translateY(0);
+    }
+
+    .card {
+        padding: 2rem 1.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .features {
+        gap: 1rem;
+    }
+
+    .feature {
+        min-width: 120px;
+    }
+}

@@ -108,6 +108,13 @@
     box-shadow: 0 6px 16px rgba(75, 169, 200, 0.3);
 }
 
+.whatsappIcon {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
