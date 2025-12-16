@@ -1,35 +1,8 @@
-// import { FaCheck } from 'react-icons/fa';
-// import styles from "../Servicios/Servicios.module.css"
-
-// const Servicio = () =>  {
-//     return (
-//         <section className= {styles.container}>
-//         <div className={styles.card}>
-//             <div className={styles.lista}>
-//                 <p><FaCheck  className={styles.featureIcon} /> Reparaciones Hidráulicas </p>
-//             </div>
-//             <div className={styles.lista}>
-//                 <p><FaCheck  className={styles.featureIcon} /> Asistencia a campo </p>
-//             </div>
-//             <div className={styles.lista}>
-//                 <p><FaCheck  className={styles.featureIcon} /> Instalación de equipos hidráulicos </p>
-//             </div>
-            
-//         </div>
-
-//         </section>
-//     )
-// }
-
-// export default Servicio;
-
-import { useState } from 'react';
 import { Wrench, Zap, Settings, Shield } from 'lucide-react';
 import styles from '../Servicios/Servicios.module.css';
 
 const Servicios = () => {
-  const [hoveredService, setHoveredService] = useState(null);
-
+  
   const services = [
     {
       id: 1,
@@ -62,28 +35,19 @@ const Servicios = () => {
   ];
 
   return (
-    <section id="servicios" className={styles.container}>
+    <section  className={styles.container}>
       <div className={styles.header}>
-        <span className={styles.badge}>Lo que hacemos</span>
+        
         <h2 className={styles.title}>
           Nuestros <span className={styles.titleGradient}>Servicios</span>
         </h2>
-        <div className={styles.divider}></div>
-        <p className={styles.subtitle}>
-          Soluciones integrales en sistemas hidráulicos con tecnología de última generación
-        </p>
       </div>
 
       <div className={styles.grid}>
         {services.map((service) => {
           const IconComponent = service.icon;
           return (
-            <div
-              key={service.id}
-              className={styles.card}
-              onMouseEnter={() => setHoveredService(service.id)}
-              onMouseLeave={() => setHoveredService(null)}
-            >
+            <div className={styles.card}>
               <div className={styles.cardImage}>
                 <img src={service.image} alt={service.title} />
                 <div className={styles.cardOverlay}></div>
@@ -96,23 +60,10 @@ const Servicios = () => {
                 
                 <h3 className={styles.cardTitle}>{service.title}</h3>
                 <p className={styles.cardDescription}>{service.description}</p>
-                
-                <button className={styles.cardButton}>
-                  Más información
-                  <span className={styles.arrow}>→</span>
-                </button>
               </div>
             </div>
           );
         })}
-      </div>
-
-      <div className={styles.ctaSection}>
-        <h3 className={styles.ctaTitle}>¿Necesitas asistencia inmediata?</h3>
-        <p className={styles.ctaText}>Nuestro equipo está disponible 24/7 para atender tus emergencias</p>
-        <button className={styles.ctaButton}>
-          💬 Contactar por WhatsApp
-        </button>
       </div>
     </section>
   );
