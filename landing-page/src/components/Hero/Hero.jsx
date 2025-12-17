@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../Hero/Hero.module.css";
 import { FaClock, FaWhatsapp, FaShieldAlt } from 'react-icons/fa';
 import { IoFlashSharp } from 'react-icons/io5';
@@ -57,9 +58,9 @@ const Hero = ()=> {
                 >
                 <FaWhatsapp /> WhatsApp
                 </a>
-                <button className={styles.btnSecondary}>
+                <Link to="/servicios" className={styles.btnSecondary}>
                 Ver Servicios
-                </button>
+                </Link>
             </div>
 
             {/* Features */}

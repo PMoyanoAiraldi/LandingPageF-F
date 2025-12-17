@@ -1,0 +1,64 @@
+.container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    position: relative;
+    height: calc(100vh - 145px); /* Resta altura del navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.titleGradient {
+    background: linear-gradient(135deg, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.texto {
+    color: #E2F1F8; 
+    font-weight: 400; 
+    font-size: 1.15rem; 
+    line-height: 1.9; 
+    max-width: 800px; 
+    margin: 0 auto 2rem auto; 
+    text-align: left; 
+}
+
+.textoIntro {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #F0F9FF;
+    line-height: 1.9; 
+    max-width: 800px; 
+    margin: 0 auto 2rem auto; 
+    text-align: left; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
