@@ -7,27 +7,27 @@ const Servicios = () => {
     {
       id: 1,
       title: "Reparaciones Hidráulicas",
-      description: "Diagnóstico y reparación de sistemas hidráulicos",
-      image: "src/assets/ReparacionesHidraulicas.jpeg"
+      description: "Diagnóstico y reparación de equipos hidráulicos",
+      image: "src/assets/ReparacionesHidraulicas.png"
     },
     {
       id: 2,
       title: "Asistencia a Campo",
       description: "Servicio de emergencia 24/7 con tiempos de respuesta inmediatos",
-      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop"
+      image: "src/assets/AsistenciaCampo.jpeg"
     },
     {
       id: 3,
       title: "Instalación de Equipos",
-      description: "Instalación profesional de sistemas hidráulicos",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop"
+      description: "Instalación profesional de equipos hidráulicos",
+      image: "src/assets/InstalacionHidraulica.png"
     },
-    {
-      id: 4,
-      title: "Mantenimiento Preventivo",
-      description: "Planes de mantenimiento personalizados para máxima eficiencia",
-      image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop"
-    }
+    // {
+    //   id: 4,
+    //   title: "Mantenimiento Preventivo",
+    //   description: "Planes de mantenimiento personalizados para máxima eficiencia",
+    //   image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop"
+    // }
   ];
 
   return (
@@ -42,7 +42,7 @@ const Servicios = () => {
       <div className={styles.grid}>
         {services.map((service) => {
           return (
-            <div className={styles.card}>
+            <div key={service.id} className={styles.card}>
               <div className={styles.cardImage}>
                 <img src={service.image} alt={service.title} />
                 <div className={styles.cardOverlay}></div>

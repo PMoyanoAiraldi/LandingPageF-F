@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto 30px;
 }
 
@@ -60,7 +60,7 @@
 
 .cardImage {
   position: relative;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 

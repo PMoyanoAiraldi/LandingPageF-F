@@ -3,7 +3,6 @@
     grid-template-columns: 200px 1fr 200px; /* Logo | Links | CTA */
     align-items: center;
     padding: 1.2rem 4rem;
-    background-color: #FFFFFF;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     position: sticky;
     top: 0;
@@ -11,6 +10,7 @@
     width: 100%;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+    background: linear-gradient(135deg, rgba(163, 180, 187, 0.25) 0%, rgba(63, 159, 201, 0.15) 100%);
 }
 
 /* Logo */
