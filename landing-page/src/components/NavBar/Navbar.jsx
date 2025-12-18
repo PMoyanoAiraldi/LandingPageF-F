@@ -9,44 +9,31 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             {/* Logo */}
             <div className={styles.logo}>
-                <Link to='/'>
+                <a href="#inicio">
                     <img src={logo} alt="F&F Hidráulica" className={styles.logoImg} />
-                </Link>
+                </a>
             </div>
 
-            {/* Links centrados */}
             <ul className={styles.links}>
                 <li>
-                    <NavLink 
-                        to="/nosotros" 
-                        className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-                    >
+                    <a href="#nosotros" className={styles.navLink}>
                         NOSOTROS
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
-                    <NavLink 
-                        to="/servicios" 
-                        className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-                    >
+                    <a href="#servicios" className={styles.navLink}>
                         SERVICIOS
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
-                    <NavLink 
-                        to="/productos" 
-                        className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-                    >
+                    <a href="#productos" className={styles.navLink}>
                         PRODUCTOS
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
-                    <NavLink 
-                        to="/contacto" 
-                        className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-                    >
+                    <a href="#contacto" className={styles.navLink}>
                         CONTACTO
-                    </NavLink>
+                    </a>
                 </li>
             </ul>
 

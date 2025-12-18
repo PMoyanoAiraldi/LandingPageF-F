@@ -4,13 +4,17 @@
     align-items: center;
     padding: 1.2rem 4rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     width: 100%;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-    background: linear-gradient(135deg, rgba(163, 180, 187, 0.25) 0%, rgba(63, 159, 201, 0.15) 100%);
+    background:linear-gradient(135deg, rgba(233, 236, 239, 0.95) 0%, rgba(220, 230, 240, 0.92) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 /* Logo */

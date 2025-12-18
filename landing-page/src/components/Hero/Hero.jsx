@@ -58,9 +58,9 @@ const Hero = ()=> {
                 >
                 <FaWhatsapp /> WhatsApp
                 </a>
-                <Link to="/servicios" className={styles.btnSecondary}>
+                <a href="#servicios" className={styles.btnSecondary}>
                 Ver Servicios
-                </Link>
+                </a>
             </div>
 
             {/* Features */}

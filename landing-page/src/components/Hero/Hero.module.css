@@ -1,11 +1,13 @@
 .hero {
     position: relative;
-    height: calc(100vh - 145px); /* Resta altura del navbar */
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
-    padding: 4rem 2rem;
+    padding: 140px 2rem 4rem 2rem;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho total */
 }
 
     /* Degradé de fondo */
