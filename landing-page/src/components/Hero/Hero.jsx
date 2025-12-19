@@ -67,7 +67,7 @@ const Hero = ()=> {
             <div className={styles.features}>
                 <div className={styles.feature}>
                 <FaClock  className={styles.featureIcon}/>
-                <span>Servicio 24/7</span>
+                <span>Emergencias 24/7</span>
                 </div>
                 <div className={styles.feature}>
                 <FaShieldAlt className={styles.featureIcon}/>

@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 140px 2rem 4rem 2rem;
+    padding: 0 2rem;
+    padding-top: 100px;
     box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho total */
 }
 
@@ -58,6 +59,7 @@
     z-index: 10;
     max-width: 900px;
     width: 100%;
+    margin-top: 100px;
 }
 
 /* Card glassmorphism */

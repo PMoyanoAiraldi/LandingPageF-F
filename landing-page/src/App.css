@@ -16,7 +16,7 @@ section:first-child {
 body {
     margin: 0;
     padding: 0;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     overflow-y: scroll;
 }
 
@@ -27,10 +27,11 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 section {
     min-height: 100vh; /* Cada sección ocupa toda la pantalla */
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     scroll-margin-top: 0; /* Cambia el anterior a 0 */
 }
