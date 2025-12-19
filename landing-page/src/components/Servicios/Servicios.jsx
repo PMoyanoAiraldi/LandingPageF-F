@@ -8,19 +8,19 @@ const Servicios = () => {
       id: 1,
       title: "Reparaciones Hidráulicas",
       description: "Diagnóstico y reparación de equipos hidráulicos",
-      image: "src/assets/ReparacionesHidraulicas.png"
+      image: "src/assets/servicios/ReparacionesHidraulicas.png"
     },
     {
       id: 2,
       title: "Asistencia a Campo",
       description: "Servicio de emergencia 24/7 con tiempos de respuesta inmediatos",
-      image: "src/assets/AsistenciaCampo.jpeg"
+      image: "src/assets/servicios/AsistenciaCampo.jpeg"
     },
     {
       id: 3,
       title: "Instalación de Equipos",
       description: "Instalación profesional de equipos hidráulicos",
-      image: "src/assets/InstalacionHidraulica.png"
+      image: "src/assets/servicios/InstalacionHidraulica.png"
     },
     // {
     //   id: 4,
