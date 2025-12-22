@@ -4,28 +4,23 @@ const Productos = () => {
 const products = [
         {
         id: 1,
-        title: "Empaquetadura",
-        description: "ver descripcion",
+        title: "Empaquetaduras",
+        description: "O-rings, polipack y empaquetaduras hidráulicas. Todas las medidas disponibles.",
         image: "src/assets/productos/Empaquetaduras.jpeg"
         },
         {
         id: 2,
         title: "Terminales, acoples, punteras",
-        description: "ver descripcion",
+        description: "Conexiones hidráulicas para mangueras. Variedad de tipos y medidas. ",
         image: "src/assets/productos/Acoples.jpeg"
         },
         {
         id: 3,
         title: "Lubricantes",
-        description: "ver descripcion",
+        description: "Aceites hidráulicos de marcas reconocidas para equipos agrícolas.",
         image: "src/assets/productos/Lubricantes.jpeg"
         },
-        // {
-        //   id: 4,
-        //   title: "Mantenimiento Preventivo",
-        //   description: "Planes de mantenimiento personalizados para máxima eficiencia",
-        //   image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop"
-        // }
+        
     ];
 
     return (

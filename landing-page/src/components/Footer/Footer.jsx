@@ -29,6 +29,9 @@ const Footer = () => {
                         <p className={styles.location}>
                             López, Santa Fe, Argentina
                         </p>
+                        <p className={styles.developer}>
+                            Desarrollado por Paula Moyano
+                        </p>
                     </div>
 
                     <div className={styles.social}>
