@@ -4,8 +4,8 @@ const Productos = () => {
 const products = [
         {
         id: 1,
-        title: "Empaquetaduras",
-        description: "O-rings, polipack y empaquetaduras hidráulicas. Todas las medidas disponibles.",
+        title: "Empaquetaduras y Accesorios",
+        description: "O-rings, polipack, tope para cilindro, acoplamientos ADA. Todas las medidas disponibles.",
         image: "src/assets/productos/Empaquetaduras.jpeg"
         },
         {
@@ -17,9 +17,15 @@ const products = [
         {
         id: 3,
         title: "Lubricantes",
-        description: "Aceites hidráulicos de marcas reconocidas para equipos agrícolas.",
+        description: "Aceites hidráulicos de marcas reconocidas para equipos agrícolas y viales.",
         image: "src/assets/productos/Lubricantes.jpeg"
         },
+        {
+        id: 4,
+        title: "Bombas, motores y válvulas de comando",
+        description: "A engranajes, a pistones, a paletas.",
+        image: "src/assets/productos/Lubricantes.jpeg"
+        }
         
     ];
 
