@@ -6,13 +6,13 @@ const products = [
         id: 1,
         title: "Empaquetaduras y Accesorios",
         description: "O-rings, polipack, tope para cilindro, acoplamientos ADA. Todas las medidas disponibles.",
-        image: "src/assets/productos/Empaquetaduras.jpeg"
+        image: "src/assets/productos/Empaquetaduras.png"
         },
         {
         id: 2,
         title: "Terminales, acoples, punteras",
         description: "Conexiones hidráulicas para mangueras. Variedad de tipos y medidas. ",
-        image: "src/assets/productos/Acoples.jpeg"
+        image: "src/assets/productos/Acoples.png"
         },
         {
         id: 3,
@@ -24,7 +24,7 @@ const products = [
         id: 4,
         title: "Bombas, motores y válvulas de comando",
         description: "A engranajes, a pistones, a paletas.",
-        image: "src/assets/productos/Lubricantes.jpeg"
+        image: "src/assets/productos/Bombas.png"
         }
         
     ];
