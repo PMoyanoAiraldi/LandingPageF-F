@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
-                {/* Descripción */}
+                
                 
                 <div className={styles.brandSection}>
                 <h3 className={styles.brandName}>F&F Hidráulica</h3>
@@ -17,10 +17,9 @@ const Footer = () => {
                 </p>
             </div>
 
-                {/* Divider */}
                 <div className={styles.divider}></div>
 
-                {/* Info y redes */}
+                
                 <div className={styles.bottomSection}>
                     <div className={styles.info}>
                         <p className={styles.copyright}>

@@ -22,7 +22,7 @@ body {
 
 .App {
     width: 100%;
-    overflow-x: hidden; /* Evita scroll horizontal */
+    overflow-x: hidden; 
 }
 
 html {
@@ -31,7 +31,7 @@ html {
 }
 
 section {
-    min-height: 100vh; /* Cada sección ocupa toda la pantalla */
+    min-height: 100vh; 
     scroll-snap-align: start; 
-    scroll-margin-top: 0; /* Cambia el anterior a 0 */
+    scroll-margin-top: 0; 
 }

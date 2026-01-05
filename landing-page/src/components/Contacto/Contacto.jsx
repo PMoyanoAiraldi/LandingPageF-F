@@ -10,7 +10,7 @@ return (
             <h2 className={styles.title}>
                 Contacta<span className={styles.titleGradient}>nos</span>
             </h2>
-            {/* Horarios de atención */}
+            
             <div className={styles.scheduleWrapper}>
                 <div className={styles.scheduleInfo}>
                     <FontAwesomeIcon icon={faClock} className={styles.clockIcon} />
@@ -28,7 +28,7 @@ return (
         
 
         <div className={styles.contactGrid}>
-        {/* Email */}
+        
         <div className={styles.contactCard}>
             <div className={styles.iconWrapper}>
                 <FontAwesomeIcon icon={faEnvelope} className={styles.icon}/> 
@@ -40,7 +40,7 @@ return (
                 <span className={styles.cardSubtext}>Enviar Email</span>
         </div>
 
-        {/* WhatsApp Facundo */}
+        
                 <div className={styles.contactCard}>
                     <div className={styles.iconWrapper}>
                         <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
@@ -57,7 +57,7 @@ return (
                 <span className={styles.cardSubtext}>Enviar WhatsApp</span>
             </div>
 
-            {/* WhatsApp Fabián */}
+        
                 <div className={styles.contactCard}>
                     <div className={styles.iconWrapper}>
                         <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
@@ -75,7 +75,7 @@ return (
             </div>
 
 
-            {/* Ubicación */}
+            
                 <div className={styles.contactCard}>
                     <div className={styles.iconWrapper}>
                         <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
@@ -92,7 +92,6 @@ return (
                 </div>
 
 
-        {/* Instagram */}
         <div className={styles.contactCard}>
             <div className={styles.iconWrapper}>
                 <FontAwesomeIcon icon={faInstagram} className={styles.icon} />

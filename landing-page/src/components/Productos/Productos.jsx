@@ -1,4 +1,8 @@
 import styles from "../Productos/Productos.module.css"
+import empaquetaduras from "../../assets/productos/Empaquetaduras.png";
+import acoples from "../../assets/productos/Acoples.png";
+import lubricantes from "../../assets/productos/Lubricantes.jpeg";
+import bombas from "../../assets/productos/Bombas.png";
 
 const Productos = () => {
 const products = [
@@ -6,25 +10,25 @@ const products = [
         id: 1,
         title: "Empaquetaduras y Accesorios",
         description: "O-rings, polipack, tope para cilindro, acoplamientos ADA. Todas las medidas disponibles.",
-        image: "src/assets/productos/Empaquetaduras.png"
+        image: empaquetaduras
         },
         {
         id: 2,
         title: "Terminales, acoples, punteras",
         description: "Conexiones hidráulicas para mangueras. Variedad de tipos y medidas. ",
-        image: "src/assets/productos/Acoples.png"
+        image: acoples
         },
         {
         id: 3,
         title: "Lubricantes",
         description: "Aceites hidráulicos de marcas reconocidas para equipos agrícolas y viales.",
-        image: "src/assets/productos/Lubricantes.jpeg"
+        image: lubricantes
         },
         {
         id: 4,
         title: "Bombas, motores y válvulas de comando",
         description: "A engranajes, a pistones, a paletas.",
-        image: "src/assets/productos/Bombas.png"
+        image: bombas
         }
         
     ];

@@ -1,5 +1,8 @@
 import { Wrench, Zap, Settings, Shield } from 'lucide-react';
 import styles from '../Servicios/Servicios.module.css';
+import reparaciones from "../../assets/servicios/ReparacionesHidraulicas.png";
+import asistencia from "../../assets/servicios/AsistenciaCampo.jpeg";
+import instalacion from "../../assets/servicios/InstalacionHidraulica.png";
 
 const Servicios = () => {
   
@@ -8,26 +11,20 @@ const Servicios = () => {
       id: 1,
       title: "Reparaciones Hidráulicas",
       description: "Diagnóstico y reparación de equipos hidráulicos",
-      image: "src/assets/servicios/ReparacionesHidraulicas.png"
+      image: reparaciones
     },
     {
       id: 2,
       title: "Asistencia a Campo",
       description: "Servicio de emergencia 24/7 con tiempos de respuesta inmediatos",
-      image: "src/assets/servicios/AsistenciaCampo.jpeg"
+      image: asistencia
     },
     {
       id: 3,
       title: "Instalación de Equipos",
       description: "Instalación profesional de equipos hidráulicos",
-      image: "src/assets/servicios/InstalacionHidraulica.png"
+      image: instalacion
     },
-    // {
-    //   id: 4,
-    //   title: "Mantenimiento Preventivo",
-    //   description: "Planes de mantenimiento personalizados para máxima eficiencia",
-    //   image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop"
-    // }
   ];
 
   return (
