@@ -15,7 +15,7 @@ return (
                 <div className={styles.scheduleInfo}>
                     <FontAwesomeIcon icon={faClock} className={styles.clockIcon} />
                     <span className={styles.scheduleText}>
-                        Lunes a Viernes: 8:00 - 12:00 hs | 15:00 - 19:00hs
+                        Lunes a Viernes: 8:00 - 12:00 hs | 14:30 - 18:30hs
                     </span>
                 </div>
                 <div className={styles.emergencyInfo}>
